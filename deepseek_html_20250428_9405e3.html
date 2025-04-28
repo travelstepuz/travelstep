@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelStep — Короткие путешествия по Узбекистану</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin: 10px;
+            background: #FF6B6B;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #FF8E8E;
+        }
+        .features {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .feature-box {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            vertical-align: top;
+        }
+        .routes {
+            background: #F5F5F5;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .route-card {
+            display: inline-block;
+            width: 30%;
+            margin: 10px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .route-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .testimonials {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .feature-box, .route-card {
+                width: 90%;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Герой-секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Узбекистан как на ладони</h1>
+            <p>Открой новые места каждую неделю!</p>
+            <a href="#download" class="btn">Скачать приложение</a>
+            <a href="#routes" class="btn">Посмотреть маршруты</a>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <h2>Почему TravelStep?</h2>
+        <div class="feature-box">
+            <h3>🚀 10+ маршрутов</h3>
+            <p>Готовые планы на выходные</p>
+        </div>
+        <div class="feature-box">
+            <h3>🗺️ Офлайн-карты</h3>
+            <p>Работает без интернета</p>
+        </div>
+        <div class="feature-box">
+            <h3>🍴 Лучшие кафе</h3>
+            <p>Проверенные рекомендации</p>
+        </div>
+    </section>
+
+    <!-- Популярные маршруты -->
+    <section class="routes" id="routes">
+        <h2>Популярные маршруты</h2>
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1562832135-14a35d25edef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Самарканд">
+            <h3>Самарканд за 2 дня</h3>
+            <p>Регистан, Гур-Эмир и секретные дворики</p>
+        </div>
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1574786577759-aebe09a843c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Бухара">
+            <h3>Бухара: древний город</h3>
+            <p>Ляби-Хауз, караван-сараи и местная кухня</p>
+        </div>
+        <div class="route-card">
+            <img src="https://images.unsplash.com/photo-1593081891731-fda0877988da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Нурата">
+            <h3>Тайны Нураты</h3>
+            <p>Горы, святые места и ночь в юрте</p>
+        </div>
+        <a href="#download" class="btn">Еще больше в приложении</a>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <h2>Отзывы</h2>
+        <div class="feature-box">
+            <p>"С TravelStep открыли для себя настоящий Узбекистан!"</p>
+            <p>- Азиза, Ташкент</p>
+        </div>
+        <div class="feature-box">
+            <p>"Лучший гид для коротких поездок. 10/10!"</p>
+            <p>- Иван, Москва</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="features" id="download">
+        <h2>Готовы к путешествию?</h2>
+        <a href="#" class="btn">Скачать для iOS</a>
+        <a href="#" class="btn">Скачать для Android</a>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <p>© 2024 TravelStep</p>
+        <p>Свяжитесь с нами: info@travelstep.uz</p>
+        <p>
+            <a href="#" style="color: white;">Instagram</a> | 
+            <a href="#" style="color: white;">TikTok</a>
+        </p>
+    </footer>
+</body>
+</html>
